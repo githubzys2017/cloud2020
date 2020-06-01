@@ -18,8 +18,10 @@ mybatis:
 
 eureka:
   instance:
-    lease-renewal-interval-in-seconds: 3
-    lease-expiration-duration-in-seconds: 6
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2
+    instance-id: payment8002
+    prefer-ip-address: true
   client:
     #是否将自己注册进Eurekaserver 默认为true
     register-with-eureka: true
