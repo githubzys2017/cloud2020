@@ -24,7 +24,7 @@ public class PaymentController {
     @Resource
     private DiscoveryClient discoveryClient;
 
-    @GetMapping(value = "/payment/discovery")
+    @GetMapping(value = "/payment/zk")
     public Object discovery() {
 
         List<String> services = discoveryClient.getServices();
